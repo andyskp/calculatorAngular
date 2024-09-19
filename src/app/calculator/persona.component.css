@@ -1,0 +1,45 @@
+h1 {
+    display: grid;
+    place-items: center;
+    color: blue;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin-top: 5px;
+   display: grid;
+   place-items: center;
+}
+
+.form-control {
+    border-radius: 10px;
+    width: 290px;
+    padding: 4px;
+    margin-top: 9px;
+    border: solid 1px rgb(182, 182, 182);
+    box-shadow: 0px 0px 9px rgb(189, 189, 189);
+}
+
+button {
+    margin-top:8px;
+}
+
+.operadores {
+    display: flex;
+    gap: 1rem;
+    margin: 6px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.persona {
+    margin: 20px;
+}

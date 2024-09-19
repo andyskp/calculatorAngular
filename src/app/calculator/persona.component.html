@@ -1,0 +1,52 @@
+<h1>Aplicación de Calculadora</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="">Operador A</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Ingresa el primer numero"
+        [(ngModel)]="operadorA"
+        name="operadorA"
+      />
+      <label for="">Operador B</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Ingresa el segundo numero"
+        [(ngModel)]="operadorB"
+        name="operadorB"
+      />
+      <div class="operadores">
+        <button type="submit" class="btn btn-primary" (click)="sumar()">
+          +
+        </button>
+        <button type="submit" class="btn btn-primary" (click)="restar()">
+          -
+        </button>
+        <button type="submit" class="btn btn-primary" (click)="multiplicar()">
+          x
+        </button>
+        <button type="submit" class="btn btn-primary" (click)="dividir()">
+          /
+        </button>
+      </div>
+      <p>Resultado : {{ resultado }}</p>
+    </div>
+  </form>
+</div>
+
+<div class="container-persona">
+  <h1>Listado de Persona</h1>
+  <button class="btn btn-primary" (click)="agregarPersona()">
+    Agregar Persona
+  </button>
+
+  <p *ngIf="mostrar">{{mensaje}} {{titulo}}</p>
+
+  <div class="persona">
+    <label for="">Titulo Persona</label>
+    <input type="text" (input)="agregarTextoPersona($event)" />
+  </div>
+</div>
